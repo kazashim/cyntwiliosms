@@ -4,8 +4,9 @@
 
 
 ?>
-
-
+<link href="style.css" rel="stylesheet">
+<html>
+<head>
 </head>
 <body>
 
