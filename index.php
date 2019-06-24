@@ -16,9 +16,8 @@ $message = $client ->message->create(
     )
 
 );
-    if (){
-
-
+    if($message->sid){
+            echo "message sent successfully";
 
     }
 }
