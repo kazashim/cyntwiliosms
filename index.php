@@ -10,12 +10,12 @@ $token='75129491c1c975859870d93e3eb967f6';
 
 $client = New Twilio/Rest/Client($sid, $token);
 $message = $client ->message->create(
-    $_POST['mobile'], array(
+    $_POST['mobile'],array(
         'from' => '+19088670450',
         'body' => $_POST['msgs']
-    )
+         )
+    );
 
-);
     if($message->sid){
             echo "message sent successfully";
 
