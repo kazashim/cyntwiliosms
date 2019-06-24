@@ -5,8 +5,8 @@ if (isset($_POST['mobile']) && isset($_POST['msgs'])){
 
 // Twilio
 
-$sid ='AC6ea1c5874e50c0ce1b4baf7a16063803';
-$token='75129491c1c975859870d93e3eb967f6';
+$sid ='';
+$token='';
 
 $client = New Twilio/Rest/Client($sid, $token);
 $message = $client ->message->create(
