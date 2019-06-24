@@ -5,13 +5,13 @@ if (isset($_POST['mobile']) && isset($_POST['msgs'])){
 
 // Twilio
 
-$sid ='';
-$token='';
+$sid ='AC6ea1c5874e50c0ce1b4baf7a16063803';
+$token='75129491c1c975859870d93e3eb967f6';
 
 $client = New Twilio/Rest/Client($sid, $token);
 $message = $client ->message->create(
     $_POST['mobile'], array(
-        'from' => '+260965058568',
+        'from' => '+19088670450',
         'body' => $_POST['msgs']
     )
 
@@ -33,7 +33,7 @@ $message = $client ->message->create(
 <p>you will get to know how to send sms using twilio.</p>
 
 <div class="container">
-  <form action="method "post">
+  <form action="" method "POST">
   <div class="row">
     <div class="col-25">
       <label for="fname">Mobile number</label>
