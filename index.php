@@ -33,7 +33,7 @@ $message = $client ->message->create(
 <p>you will get to know how to send sms using twilio.</p>
 
 <div class="container">
-  <form action="" method "POST">
+  <form action="" method "post">
   <div class="row">
     <div class="col-25">
       <label for="fname">Mobile number</label>
