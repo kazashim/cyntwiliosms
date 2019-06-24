@@ -1,11 +1,16 @@
 <!-- ===== Our PHP code will be here ===== -->
 <?php 
     include './vendor/autoload.php';
-if (isset($_POST[])){
+if (isset($_POST['mobile']) && isset($_POST['msgs'])){
 
+// Twilio
 
+$sid ='';
+$token='';
 
-    
+$client = New Twilio/Rest/Client($sid, $token);
+$client ->message->create();
+
 }
 
 ?>
@@ -25,7 +30,7 @@ if (isset($_POST[])){
       <label for="fname">Mobile number</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="mobile number" placeholder="Mobile number">
+      <input type="text" id="fname" name="mobile" placeholder="Mobile number">
     </div>
   </div>
   
