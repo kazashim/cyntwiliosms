@@ -9,7 +9,13 @@ $sid ='';
 $token='';
 
 $client = New Twilio/Rest/Client($sid, $token);
-$client ->message->create();
+$client ->message->create(
+    $_POST['mobile'], array(
+        'from' => '+260965058568',
+        'body' => $_POST['msgs']
+    )
+
+);
 
 }
 
