@@ -10,6 +10,10 @@ if(isset($_POST['mobile']) && isset($_POST['msg'])){
 $account_sid = 'MGb77f89a0b2998d0bac62e1da2df425dc';
 $auth_token = '75129491c1c975859870d93e3eb967f6';
 
+$sid ='';
+$token='';
+
+
 $client = new Client($account_sid, $auth_token);
 $messages = $client->messages->create(
     $_POST['mobile'],array(
@@ -21,14 +25,12 @@ if ($messages->sid){
 	
 echo "message sent";
 
-};
+}
     
 }
 
 ?>
 
-
-<html>
 <h2>Cyn Twilio sms Example</h2>
 <p>you will get to know how to send sms using twilio.</p>
 
@@ -48,4 +50,4 @@ echo "message sent";
     <input type="submit" value="Submit">
   
   </form>
-</html>
+
